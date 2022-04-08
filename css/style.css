@@ -12,7 +12,7 @@ body * {margin:0;padding:0;}
 
 /* 토스트 팝업 */
 .toast_action_popup{position:fixed;left:16px;right:16px;bottom:-70px;margin-bottom:constant(safe-area-inset-bottom);margin-bottom:env(safe-area-inset-bottom);background:rgba(17,17,17,0.85);border-radius:30px;text-align:center;z-index:1000;overflow:hidden;}
-.toast_action_popup.show{animation:toast_action_show 0.3s cubic-bezier(0.755, 0.115, 0.100, 0.600) forwards, toast_action_bounce 0.7s linear forwards;opacity:1;} 
+.toast_action_popup.show{animation:toast_action_show 0.5s linear forwards, toast_action_bounce 0.7s cubic-bezier(0.755, 0.115, 0.100, 0.600) forwards;opacity:1;} 
 .toast_action_popup .data_wrapper{height:48px;line-height:48px;transform:translate3d(0px, 0px, 0px);transition:transform .5s;-webkit-transition:transform .5s}
 .toast_action_popup .data_wrapper p{white-space:nowrap;font-size:14px;color:#fff;} 
 .toast_action_popup .data_wrapper .qty{color:red}
