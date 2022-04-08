@@ -18,12 +18,6 @@ body * {margin:0;padding:0;}
 .toast_action_popup .data_wrapper .qty{color:red}
 .toast_action_popup .btn_close{width:20px;height:20px;text-indent:-9999px;background:url(/resources/mimages/unity/btn_toast_close.png) center center no-repeat;background-size:13px auto;position:absolute;right:15px;top:0;bottom:0;margin:auto 0;}
 
-/* @-webkit-keyframes toast_action_bounce {
-    70% { transform:translateY(0); }
-    80% { transform:translateY(-10px); }
-    90% { transform:translateY(-5px); }
-    100% { transform:translateY(0); }
-} */
 
 @keyframes toast_action_show {
     0%{ bottom:-70px;}
