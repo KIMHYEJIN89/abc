@@ -37,8 +37,6 @@
                 $(function(){
     
     
-                    var height = 70;
-                    var total = height + 19;
                     var repeat;
 
 
@@ -51,10 +49,6 @@
     
                     if($('.toast_action_popup').hasClass("show")){
     
-                   //     $('.toast_action_popup').css('z-index',1004);
-                      //  $('.toast_action_popup').css('bottom',total);
-                        //$('.toast_action_popup').animate({ bottom: total }, {duration:1000, easing: 'easeOutQuint'});
-                        
                             text_rolling();// 텍스트 세로 롤링
             
                     }
@@ -79,6 +73,7 @@
     
                                 clearInterval(repeat);
                                 toast_init();
+
     
                             }else $('.toast_action_popup  .data_wrapper').css({transform:'translate3d(0px,'+ -totalHeight +'px, 0px)'}); 
                     
@@ -87,13 +82,11 @@
             }
     
             function toast_init(){
-    
-                totalHeight = 0;
-                count = 0;
 
-                $('.toast_action_popup').animate({ bottom:0, opacity:0 }, {duration:800, easing: 'easeOutQuint'});
-                $('.toast_action_popup .data_wrapper').css({transform:'translate3d(0px, 0px, 0px)'}); 
+                $('.toast_action_popup').addClass('hide');
                 $('.toast_action_popup').removeClass('show');
+
+          
             }
     
             </script>
