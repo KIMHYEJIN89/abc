@@ -22,7 +22,7 @@ body * {margin:0;padding:0;}
 
 @keyframes toast_action_show {
   45%{ bottom: 100px;}
-  65%{ bottom: 80px;}
+  65%{ bottom: 85px;}
   85%{ bottom: 92px;}
 100%{ bottom:89px;}
 
