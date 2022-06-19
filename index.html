@@ -234,7 +234,7 @@
                 layerId.addClass('open');
 
                 win.css({ 'overflow': 'hidden', 'height': '' })
-                    .on('touchmove', function (e) { //e.preventDefault();
+                    .on('touchmove', function (e) {e.preventDefault();
                     
                     });
 
@@ -247,7 +247,7 @@
 
                 layerId.on('touchmove', function (e) {
                     
-                    //e.preventDefault() 
+                    e.preventDefault() 
                 
                 });
 
