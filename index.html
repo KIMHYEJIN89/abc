@@ -280,10 +280,12 @@
 
                         e.preventDefault();
                         e.preventDefault = false;
+                        layerContent.unbind();
 
 
                     }) : layerId.on('touchmove', function (e) { e.preventDefault();
                         e.preventDefault = false;
+                        layerId.unbind();
                     
                     });
 
