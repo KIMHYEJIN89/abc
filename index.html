@@ -279,12 +279,10 @@
                     (layerWrap.hasClass('scroll')) ? layerContent.on('touchmove', function (e) {
 
                         e.preventDefault();
-                        e.preventDefault = false;
                         layerContent.unbind();
 
 
                     }) : layerId.on('touchmove', function (e) { e.preventDefault();
-                        e.preventDefault = false;
                         layerId.unbind();
                     
                     });
@@ -347,6 +345,20 @@
             }
               return false
         });
+
+
+        ($('.layer_wrap').hasClass('scroll')) ? $('.layer_cont').on('touchmove', function (e) {
+
+                e.preventDefault();
+                $('.layer_cont').unbind();
+                console.log("111111111111");
+
+
+                }) : $('#popSkinSizeRecom').on('touchmove', function (e) { e.preventDefault();
+                    $('#popSkinSizeRecom').unbind();
+                console.log("22222222222");
+
+                });
     })
 
 
