@@ -18,7 +18,7 @@
     <div id="wrap" class="product_detail">
     <section id="container">
 
-        <div id="popSkinSizeRecom" class="pop_skin_size_recom layer_dim sendFrame">
+        <div id="popSkinSizeRecom" class="pop_skin_size_recom layer_dim ">
 
             <div class="layer_wrap">
                 <h2 class="layer_title">등록</h2>
@@ -272,10 +272,10 @@
 
                     (layerWrap.hasClass('scroll')) ? layerContent.on('touchmove', function (e) {
 
-                        e.stopPropagation();
+                        e.preventDefault()
 
 
-                    }) : layerId.on('touchmove', function (e) {e.stopPropagation()});
+                    }) : layerId.on('touchmove', function (e) { e.preventDefault()});
 
                 });
                 observer.observe(popObjCont)
