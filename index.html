@@ -243,7 +243,7 @@
                     win.addClass("overflowCut");
                 }
 
-                layerId.on('touchmove', function (e) { e.preventDefault() });
+                layerId.on('touchmove', function (e) { //e.preventDefault() });
 
 
                 //scrollOff(layerContent);
@@ -272,10 +272,10 @@
 
                     (layerWrap.hasClass('scroll')) ? layerContent.on('touchmove', function (e) {
 
-                        e.preventDefault()
+                     //   e.preventDefault()
 
 
-                    }) : layerId.on('touchmove', function (e) { e.preventDefault()});
+                    }) : layerId.on('touchmove', function (e) { //e.preventDefault()});
 
                 });
                 observer.observe(popObjCont)
