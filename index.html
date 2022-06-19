@@ -234,7 +234,9 @@
                 layerId.addClass('open');
 
                 win.css({ 'overflow': 'hidden', 'height': '' })
-                    .on('touchmove', function (e) { e.preventDefault(); });
+                    .on('touchmove', function (e) { //e.preventDefault();
+                    
+                    s});
 
                 // 윈도우 스크롤이 없어야 하는 경우
                 if (overflowHiddenLayer.indexOf(id) !== -1 || layerWrap.hasClass('sendFrame')) {
@@ -243,7 +245,11 @@
                     win.addClass("overflowCut");
                 }
 
-                layerId.on('touchmove', function (e) { //e.preventDefault() });
+                layerId.on('touchmove', function (e) {
+                    
+                    //e.preventDefault() 
+                
+                });
 
 
                 //scrollOff(layerContent);
@@ -272,10 +278,12 @@
 
                     (layerWrap.hasClass('scroll')) ? layerContent.on('touchmove', function (e) {
 
-                     //   e.preventDefault()
+                       // e.preventDefault()
 
 
-                    }) : layerId.on('touchmove', function (e) { //e.preventDefault()});
+                    }) : layerId.on('touchmove', function (e) { //e.preventDefault()
+                    
+                    });
 
                 });
                 observer.observe(popObjCont)
