@@ -278,10 +278,12 @@
 
                     (layerWrap.hasClass('scroll')) ? layerContent.on('touchmove', function (e) {
 
-                        e.preventDefault()
+                        e.preventDefault();
+                        e.preventDefault = false;
 
 
-                    }) : layerId.on('touchmove', function (e) { e.preventDefault()
+                    }) : layerId.on('touchmove', function (e) { e.preventDefault();
+                        e.preventDefault = false;
                     
                     });
 
