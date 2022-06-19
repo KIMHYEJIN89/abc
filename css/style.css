@@ -336,7 +336,7 @@ a.btn_stype1.c4:after, a.btn_mtype1.c4.arr:after, a.btn_ltype1.c4.arr:after {bor
 #popSkinSizeRecom .size_recommend{position:relative}
 #popSkinSizeRecom .layer_cont{margin:0 -18px}
 #popSkinSizeRecom .text_wrap{padding:0 18px;margin-bottom:20px}
-#popSkinSizeRecom .ac_list_wrap{position:relative;}
+#popSkinSizeRecom .ac_list_wrap{position:relative;max-height:300px;overflow-y:auto;}
 #popSkinSizeRecom .ac_list_wrap > ul > li{border-top:1px solid #eee}
 #popSkinSizeRecom .ac_list_wrap > ul > li:last-child{border-bottom:1px solid #eee}
 #popSkinSizeRecom .ac_list_wrap > ul > li > a{display:block;position:relative;padding:14px 0 13px 18px}
