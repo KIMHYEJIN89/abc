@@ -2624,7 +2624,7 @@ $(window).on('load',function(){
         //     }
         //   },
           on: {
-                slideChange: function () {//다음 슬라이드
+                slideChange: function () {// 슬라이드 변경 될 경우
                    $('.toast_action_popup').removeClass('show');
                 }
             }
@@ -2663,7 +2663,7 @@ $(window).on('load',function(){
                         count++;
 
                         if(count == length){
-                            $('.toast_action_popup .data_wrapper').css({transform:'translate3d(0px, 0px, 0px)'})
+                          //  $('.toast_action_popup .data_wrapper').css({transform:'translate3d(0px, 0px, 0px)'})
                             clearInterval(repeat);
                             toast_init();
 
