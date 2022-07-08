@@ -2664,7 +2664,7 @@ $(window).on('load',function(){
 
                         if(count == length){
                           //  $('.toast_action_popup .data_wrapper').css({transform:'translate3d(0px, 0px, 0px)'})
-                            clearInterval(repeat);
+                   
                             toast_init();
 
 
@@ -2676,7 +2676,7 @@ $(window).on('load',function(){
 
                 function toast_init(){
 
-
+                    clearInterval(repeat);
                 $('.toast_action_popup').removeClass('show');
                 $('.toast_action_popup').addClass('hide');
 
