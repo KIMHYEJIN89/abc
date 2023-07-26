@@ -1,173 +1,40 @@
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
-    <script src="./jquery-1.12.4.js"></script>
-    <link href="./common.css" rel="stylesheet">
-</head>
-<header id="header">
-	<div class="wrap_tit">
-		<h1>가입완료
-			
-		</h1>
-		<a href="#none" class="btn_close"><span class="blind">창닫기</span></a>
-	</div>
-</header>
-<section id="container">
-    <div class="join_wrap">
-        <div class="join_complete_wrap">
-            <div class="cont_area">
-                <div class="complete_text">
-                    <p>환영합니다<br>OOOO 회원이 되었어요!</p>
-                </div>
-                 <div class="coupon_area">
-                    <div class="inner">
-                        <div class="img_area">
-                            <img src="./img_area_temp.jpg" alt="">
-                        </div>
-                        <p class="txt">무료배송 쿠폰이 발급되었어요.</p>
-                        <ul class="bul_list">
-                            <li>쿠폰은 당월 사용 가능합니다.</li>
-                            <li>쿠폰은 해외배송 및 일부 상품에는 적용되지 않습니다.</li>
-                            <li>쿠폰은 마이롯데 &gt; 쿠폰 &gt; 할인쿠폰 ‘쿠폰내역'에서 확인할 수 있습니다.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="btn_go_box">
-                    <a href="#none" class="btn_go">OOOOO  이용하기</a>
-                </div>
-            </div>
-            <div class="certi_area">
-                <div>
-                    <p class="txt txt1">
-                        회원가입 후 첫 상품구매/이벤트 참여 시<br>
-                        1회의 본인인증이 꼭 필요합니다
-                    </p>
-                    <p class="txt txt2">지금 하시겠습니까?</p>
-                    <div class="btn_area col2">
-                        <a href="#none" class="btn_mtype1">다음에하기</a>
-                        <a href="#none" class="btn_mtype1 c2">본인인증하기</a>
-                    </div>
-                </div>
-     
-                <div class="alert_toast_popup">
-                        <p>고객님의 2023.03.11일 마케팅 활용 동의(이메일 수신 동의, 전화 수신 거부)가 처리되었습니다.</p>
-                    </div> 
-                </div>
-            </div>
-    </div>
-    <footer id="footer" class="footer">
-        <div class="foot_menu">
-            <ul>
-                <li><a href="#none" title="새창 링크" target="_blank">고객센터</a></li>
-                <li><a href="#none">서비스 안내</a></li>
-                <li><a href="#none">PC버전</a></li>
-                <li><a href="#none">로그아웃</a></li>
-            </ul>
-        </div>
-        <div class="foot_con">
-            <h3 class="blind">LOTTE HOMESHOPPING 사업자 연락정보 및 약관</h3>
-            <div class="footer_logo">롯데홈쇼핑</div>
-            <p class="footer_tog_btn"><a href="#none"><strong>주식회사 우리홈쇼핑</strong></a></p>
-            <div class="foot_tog_cont">
-                <div class="foot_contact">
-                    <p>대표이사 김재겸</p>
-                    <p class="address">
-                        <span class="txt">서울 영등포구 양평로 21길 10(양평동 5가)</span><a href="#" class="btn_map">오시는 길</a>
-                    </p>
-                </div>
-                <div class="foot_policy">
-                    <p>사업자등록번호 : 117-81-33400</p>
-                    <p>통신판매업신고 : 제 2010-영등포-0281호</p>
-                    <p>직업정보제공사업자신고 : 서울남부 제 2011-4호</p>
-                    <p><a href="tel:1899-4000">고객만족센터(유료) : 1899-4000</a></p>
-                    <p class="foot_indent">
-                        <em>상담가능시간 :</em>
-                        <span>09:00~20:00(평일)<br>09:00~13:00(토) / 일,공휴일 휴무</span>
-                    </p>
-                    <p>이메일 : <a href="mailto:master@lotteimall.com">master@lotteimall.com</a></p>
-                    <p>개인정보 보호책임자 : 박재홍</p>
-                    <p>대표이사 핫라인 팩스 : 02-2168-5019</p>
-                    <p>호스팅 서비스 사업자 : (주)우리홈쇼핑</p>
-                </div>
-            </div>
-            <div class="toot_etc">
-                <a href="http://m.lotteimall.com/main/viewMain.lotte" title="새창 링크" target="_blank">사업자정보확인</a>
-                <a href="http://m.lotteimall.com/contactus/forward.pop_ibk.lotte" title="새창 링크" target="_blank">기업은행 채무지급보증 안내</a>
-            </div>
-            <ul class="foot_terms">
-                <li><a href="#" title="새창 링크" target="_blank">이용약관</a></li>
-                <li><a href="#" title="새창 링크" target="_blank">개인정보처리방침</a></li>
-                <li><a href="#" title="새창 링크" target="_blank">소비자분쟁 해결기준</a></li>
-            </ul>
-            <script>
-                $(function(){
-                    $('.footer_tog_btn > a').on('click', function(e){
-                        e.preventDefault();
-                        $('.footer_tog_btn').toggleClass('foot_on');
-                        if($('.footer_tog_btn').hasClass('foot_on')){
-                            $('.foot_tog_cont').show();
-                            $('html, body').animate({scrollTop:$(document).height()});
-                        } else {
-                            $('.foot_tog_cont').hide();
-                        }
-                    })
-                })
-            </script>
-        </div>
-    </footer>
-</section>
+<html lang="ko"><head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta http-equiv="pragma" content="no-cache"> <!-- 캐시 사용하지 않는 메타 -->
+	<meta http-equiv="Cache-Control" content="no-cache"> <!-- 캐시 사용하지 않는 메타 -->
+	<meta http-equiv="Expires" content="0"> <!-- 캐시 사용하지 않는 메타 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>롯데홈쇼핑</title>  
+	<link rel="apple-touch-icon-precomposed" sizes="any" href="https://image.lotteimall.com/imall_mc/site/images/unity/common/favicon_ios_iphone_180x180.png?m=141583249">  
+	<link rel="dns-prefetch" href="https://image.lotteimall.com/">
+	<link rel="apple-touch-startup-image" href="/images/unity/common/favicon_ios_iphone_180x180.png?m=141583249">
+	<link rel="apple-touch-startup-image" href="https://image.lotteimall.com/imall_mc/site/images/unity/common/favicon_ios_iphone_180x180.png?m=141583249">
+	<link rel="apple-touch-icon" href="https://image.lotteimall.com/imall_mc/site/images/unity/common/favicon_ios_iphone_180x180.png?m=141583249">
+	<link rel="apple-touch-icon-precomposed" type="image/png" href="https://image.lotteimall.com/imall_mc/site/images/unity/common/favicon_ios_iphone_120x120.png?m=141583249"> 
+	<link rel="apple-touch-icon-precomposed" type="image/png" sizes="120x120" href="https://image.lotteimall.com/imall_mc/site/images/unity/common/favicon_ios_iphone_120x120.png?m=141583249"> 
+	<link rel="apple-touch-icon-precomposed" type="image/png" sizes="152x152" href="https://image.lotteimall.com/imall_mc/site/images/unity/common/favicon_ios_iphone_152x152.png?m=141583249"> 
+	<link rel="apple-touch-icon-precomposed" type="image/png" sizes="167x167" href="https://image.lotteimall.com/imall_mc/site/images/unity/common/favicon_ios_iphone_167x167.png?m=141583249"> 
+	<link rel="apple-touch-icon-precomposed" type="image/png" sizes="180x180" href="https://image.lotteimall.com/imall_mc/site/images/unity/common/favicon_ios_iphone_180x180.png?m=141583249">   
+	<link rel="mask-icon" href="https://image.lotteimall.com/imall_mc/site/images/unity/common/favicon.ico">
+	<link rel="shortcut icon" href="https://image.lotteimall.com/imall_mc/site/images/unity/common/favicon.ico">
+	<!-- <link rel="apple-touch-icon" href="https://image.lotteimall.com/imall_mc/site/images/unity/common/favicon_ios_iphone_180x180.png?m=141583249">
+	<link rel="icon" href="https://image.lotteimall.com/imall_mc/site/images/unity/common/favicon_ios_iphone_180x180.png?m=141583249"> -->
+	<link rel="icon" type="image/x-icon" href="https://image.lotteimall.com/imall_mc/site/images/unity/favicon.ico">
+	<link rel="apple-touch-icon" href="https://image.lotteimall.com/imall_mc/site/images/unity/common/favicon_ios_iphone_120x120.png?m=141583249"> 
+	<link rel="apple-touch-icon" sizes="120x120" href="https://image.lotteimall.com/imall_mc/site/images/unity/common/favicon_ios_iphone_120x120.png?m=141583249"> 
+	<link rel="apple-touch-icon" sizes="152x152" href="https://image.lotteimall.com/imall_mc/site/images/unity/common/favicon_ios_iphone_152x152.png?m=141583249"> 
+	<link rel="apple-touch-icon" sizes="167x167" href="hhtps://image.lotteimall.com/imall_mc/site/images/unity/common/favicon_ios_iphone_167x167.png?m=141583249"> 
+	<link rel="apple-touch-icon" sizes="180x180" href="https://image.lotteimall.com/imall_mc/site/images/unity/common/favicon_ios_iphone_180x180.png?m=141583249"> 
+	<link rel="icon" href="https://image.yes24.com/sysimage/mobileN/icon/icon_n.png">
+	<link rel="dns-prefetch" href="https://image.lotteimall.com/"> 
 
-<style>
-    html, body {
-    height: 100%
-}
-    .join_wrap .join_complete_wrap{position:relative;   min-height:100%; 
-}
-    
-.cont_area{}
-    .join_wrap .join_complete_wrap .complete_text{position:relative;padding:40px 0;text-align:center;}
-    .join_wrap .join_complete_wrap .complete_text:before{display:block;content:"";width:48px;height:48px;margin:0 auto;background:url(/resources/mimages/unity/2023/member/icon_complete_img.png) no-repeat 0 0 ;background-size:48px auto; }
-    .join_wrap .join_complete_wrap .complete_text p{margin-top:16px;line-height:28px;font-size:22px;font-weight:700;letter-spacing:-0.02em;}
-    .join_wrap .join_complete_wrap .coupon_area{padding:0 16px;margin-bottom:40px;}
-    .join_wrap .join_complete_wrap .coupon_area .inner{padding:16px 17px 13px;border:1px solid #eee;border-radius:2px}
-    .join_wrap .join_complete_wrap .coupon_area .img_area img{width:100%}
-    .join_wrap .join_complete_wrap .coupon_area .txt{padding-left:3px;margin-top:12px;font-size:13px;font-weight:700;letter-spacing:-0.02em;}
-    .join_wrap .join_complete_wrap .coupon_area .bul_list{padding-left:3px;margin-top:16px}
-    .join_wrap .join_complete_wrap .coupon_area .bul_list > li{margin:3px 0;padding-left:9px;font-size:12px;color:#777;letter-spacing:-0.02em;}
-    .join_wrap .join_complete_wrap .btn_go_box{text-align:center;}
-    .join_wrap .join_complete_wrap .btn_go_box a{text-decoration:underline;font-size:13px;color:#444}
-    .join_wrap .join_complete_wrap .certi_area{position:absolute;left:0;right:0;bottom:0px;padding:18px 16px 60px;border-top:1px solid #eee;background-color:#fff;}
-    .join_wrap .join_complete_wrap .certi_area .txt{font-size:14px;color:#444;letter-spacing:-0.02em;}
-    .join_wrap .join_complete_wrap .certi_area .txt2{margin-top:15px}
-    .join_wrap .join_complete_wrap .certi_area .btn_area{margin:0;margin-top:20px}
-    .join_wrap .join_complete_wrap .certi_area .btn_area a{height:36px;padding:10px 12px 9px;font-size:13px}
-    .join_wrap .join_complete_wrap .alert_toast_popup{position:absolute;left:0;right:0;bottom:0px;width:100%;background-color:rgba(17,17,17,0.6);}
-    .join_wrap .join_complete_wrap .alert_toast_popup p{padding:8px 16px;line-height:15px;font-size:12px;color:#fff}
-    .join_wrap .join_complete_wrap .alert_toast_popup.hide{display:none}
-    
-    </style><script>
-
-/* 마케팅 활용 동의 처리결과 알림 토스트 팝업 */
-setTimeout(function() {
-    $('.join_complete_wrap .alert_toast_popup').addClass('hide');
-}, 3000);
-var h = $(".coupon_area").outerHeight();
-if ($(".coupon_area").css("display") == "none") { 
-    $('.cont_area').css('padding-bottom', 0 )
-
-}else  var h2 = $('.cont_area').css('padding-bottom', h  + 30)
+<style type="text/css">#_copy{align-items:center;background:#4494d5;border-radius:3px;color:#fff;cursor:pointer;display:flex;font-size:13px;height:30px;justify-content:center;position:absolute;width:60px;z-index:1000}#select-tooltip,#sfModal,.modal-backdrop,div[id^=reader-helper]{display:none!important}.modal-open{overflow:auto!important}._sf_adjust_body{padding-right:0!important}.super_copy_btns_div{position:fixed;width:154px;left:10px;top:45%;background:#e7f1ff;border:2px solid #4595d5;font-weight:600;border-radius:2px;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,PingFang SC,Hiragino Sans GB,Microsoft YaHei,Helvetica Neue,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;z-index:5000}.super_copy_btns_logo{width:100%;background:#4595d5;text-align:center;font-size:12px;color:#e7f1ff;line-height:30px;height:30px}.super_copy_btns_btn{display:block;width:128px;height:28px;background:#7f5711;border-radius:4px;color:#fff;font-size:12px;border:0;outline:0;margin:8px auto;font-weight:700;cursor:pointer;opacity:.9}.super_copy_btns_btn:hover{opacity:.8}.super_copy_btns_btn:active{opacity:1}</style></head>
+<body>
+	롯데홈쇼핑 - FAVICON TEST
 
 
-// $('.cont_area').css('padding-bottom' , h)
-// var winH = $(window).innerHeight();
-//     var conH = $("#container").innerHeight();
-//     var headerH = $(".cont_area").innerHeight();
-//     var footH = $(".certi_area").innerHeight();
-//     var total = winH - (headerH + footH)
-
-//     console.log("wrapH : " + winH);
-//     console.log("conH : " + conH);
-//     if( conH < winH){
-//         $("#container").css('min-height',total)
-//     }
-
-</script>
+</body></html>
